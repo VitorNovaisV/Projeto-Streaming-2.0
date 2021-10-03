@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site Desenvolvido para a semana paulo freire, com o tema de streaming">
+  <meta name="keyword" content="Streaming, Livestreaming,">
+  <meta name="author" content="Vitor Oliveira,Thayna Soares,Matheus Valladao">
+  <title>Serviços de Streaming</title>
+
+  <!--Blibliotecas-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+
+<body>
+  <!----Header---->
+
+  <section id="header">
+
+    <nav class="navbar navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#header"><img src="img/logo_s.png" alt="logo_s"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-white" href="#origem">Origem</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-white" href="#comofunciona">Como Funciona</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-white" href="#diasatuais">Dias Atuais</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-white" href="#exemplos">Exemplos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-white" href="#diferencas">Diferenças</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-white" href="#footer">Equipe</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="welcome">
+    <div class="container">
+      <div class="welcome text-center">
+        <h1>Vamos Aprender sobre Streaming?</h1>
+        <p>No conteúdo a seguir
+          veremos um pouco sobre streaming.
+          como o serviço se originou, como ele funciona e mais!
+        </p>
+        <button class="btn home-btn btn-secondary" onclick="document.location='#origem'">Vamos lá!
+        </button>
+      </div>
+    </div>
+    <a id="link-topo" onclick="document.location='#header'">
+      <i class="fas fa-sort-up"></i>
+    </a>
+
+  </section>
+  <section id="origem">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center">
+
+          <img src="img/tv.jpg" data-toggle="modal" data-target="#modal1" class="img-fluid img-zoom ">
+          <img src="img/Muzak.jpg" data-toggle="modal" data-target="#modal2" class="img-fluid img-zoom ">
+          <img src="img/radio.jpg" data-toggle="modal" data-target="#modal3" class="img-fluid img-zoom ">
+
+
+
+        </div>
+        <div class="col-md-6 text-justify">
+          <div class="container cont-custom">
+            <div class="container-fluid cont-text">
+              <h3 class="titulo">Origem</h3>
+
+              <p>
+                Streaming é a transmissão, em tempo real, de áudio ou vídeo e até mesmo ambos de um servidor para um
+                aparelho.
+              </p>
+              <p>
+                Manipulando as frequências elétricas, fomos capazes criar uma forma de transmitir informações entre dois
+                locais sem o uso de fios,
+                Estas informações eram transmitidas via código Morse entre os militares. O que evoluiu para uma
+                interface simples para a população
+                com o objetivo de transmitir notícias do dia, entretenimento, e música para milhões de pessoas. assim
+                originando o rádio, o primeiro
+                meio de streaming.
+              </p>
+              <p>
+                Em seguida surgiu a televisão. Porém ela apenas se tornou popular após a segunda guerra mundial quando
+                seus preços se tornaram
+                mais acessíveis.
+              </p>
+              <p>
+                Então chegou o “RealAudio” criado pela Progressive Networks , a primeira empresa a popularizar o serviço
+                de streaming de maneira
+                online. Na primeira metade da década de 1990, o som chegava aos usuários era muito inferior ao do rádio.
+              </p>
+              <p>
+                A transmissão era em mono utilizando de arquivos altamente compactados. Eles ficavam mais leves, mas
+                perdiam em qualidade. Era o
+                preço que se tinha para receber os dados sem esgotar o limite de transferência da banda.
+              </p>
+              <p>
+                Nos últimos anos passamos por uma revolução nesse serviço, que teve muito impacto por conta da
+                globalização, os arquivos agora
+                são salvos em servidores e transmitidos ao usuário sem que seja necessário salvar fisicamente em
+                qualquer dispositivo de memória,
+                assim como seu conceito original no rádio e televisão.
+              </p>
+            </div>
+          </div>
+        </div>
+        <hr>
+  </section>
+
+  <section id="comofunciona">
+    <div class="container cont-custom">
+      <div>
+        <h3 class="text-center">Como Funciona?</h3>
+
+        <p>
+          Basicamente, o streaming funciona como uma troca de dados constante entre um aparelho e um servidor. Quando
+          uma
+          pessoa dá
+          play em um filme, por exemplo, o aparelho envia um pedido para o servidor onde aquele conteúdo está armazenado
+          que por fim
+          manda os dados de imagem e som. Este envio, diferente de textos e imagens estáticas, requer um transporte mais
+          rápido, para que os
+          usuários não sintam que o arquivo está pela metade. Muitos reprodutores utilizam a função de buffer, que
+          carrega
+          o vídeo ou a
+          música antes mesmo de ela ser reproduzida, dando uma melhor sensação de continuidade. Além disso, ele tem as
+          seguintes etapas
+          para ser realizado: Captura, codificação e distribuição.
+        </p>
+
+        <p>
+          A fase de captura é importante, pois assim, o dispositivo irá armazenar todo seu evento, podendo ser filmado
+          até
+          com a câmera do
+          seu celular, uma webcam ou uma câmera de vídeo profissional. No entanto, opte por uma câmera que transmita em
+          alta
+          resolução,
+          para haver uma maior qualidade e que o equipamento possa ser conectado a um encoder, assim ele irá fazer a
+          codificação do seu
+          vídeo para que seja reproduzido online, sem esquecer de testar a iluminação e o áudio. Na fase de codificação,
+          você tem três opções;
+          fazer via software, switchers de vídeo e equipamentos plug & play. O detalhe mais necessário nessa fase é o
+          upload, que deve ser feito
+          entre 3 até 5 MB. Por fim, na fase de distribuição, é quando seu conteúdo finalmente vai ao ar.
+        </p>
+      </div>
+      <div>
+        <img src="img/Diagrama.jpg" class="imgcustom">
+      </div>
+    </div>
+  </section>
+  <section id="video-back">
+    <hr> <hr>
+    <div class="container video">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <br><br><br><br><br>
+          <p>
+            Caso preferir, aqui está um vídeo
+            do canal TecMundo falando um pouco sobre Streaming
+
+          </p>
+          <br><br><br><br><br>
+
+
+        </div>
+        <div class="col-md-6">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/C27uLHViR5Q"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <hr>
+  </section>
+
+  <section id="diasatuais">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-justify">
+          <h3>Dias Atuais</h3>
+          <p>
+            Era necessário muita paciência para ouvir uma música ou assistir a um vídeo através do streaming até os anos
+            2000, por conta de
+            passarem mais tempo sendo carregados do que sendo exibidos além de estarem em baixa qualidade.
+          </p>
+          <p>
+            Isso mudou com a chegada da banda larga, o que popularizou (e muito) os serviços de streaming e até
+            incentivou
+            empresas e
+            emissoras de tv a terem sua própria plataforma, isso resultou em diversos conteúdos exclusivos para cada
+            uma, o
+            que dificulta na
+            escolha do usuário de qual escolher, já que uma parte desses serviços são cobrados por assinatura
+          </p>
+          <p>
+            A tecnologia permite que se acompanhe um evento ao vivo, como a cerimônia de entrega do Oscar, um podcast ou
+            um
+            show que
+            seja transmitido diretamente pela internet , quanto que se faça uso dos serviços on-demand.
+          </p>
+          <p>
+            Os streamings on-demand possibilita que o usuário controle o que vai assistir, quando e onde. Os dados são
+            acessados ao mesmo
+            tempo em que são recebidos, sem a necessidade de esperar um download ou de ocupar espaço em seu HD com o
+            armazenamento
+            de conteúdo. Também é possível controlar a exibição, pausando, avançando ou retrocedendo o vídeo ou a
+            música.
+          </p>
+        </div>
+        <div class="col-md-6">
+
+          <img src="img/Carregando.jpg" data-toggle="modal" data-target="#modal4" class="img-fluid imgcustom img-zoom ">
+          <img src="img/aovivo.jpg" data-toggle="modal" data-target="#modal5" class="img-fluid imgcustom img-zoom ">
+
+        </div>
+        <hr>
+  </section>
+  <section id="exemplos">
+    <div class="container cont-custom">
+      <div class="container-fluid cont-text">
+        <h3 class="titulo">Exemplos</h3>
+        <p>
+          Os exemplos mais conhecidos de streaming são a Netflix, o Spotify, a Deezer, o Amazon Prime, mas, outras
+          plataformas também
+          podem ser consideradas streaming, como o YouTube e o Google Drive (Drive File Stream)
+        </p>
+        <p>
+          o Netflix, como exemplo cobra uma assinatura mensal e disponibiliza séries, filmes e documentários que
+          podem ser assistidos em
+          diversos dispositivos a qualquer hora. Vários sites partem do mesmo conceito com o streaming de músicas,
+          muitas redes de televisão
+          já disponibilizam sua programação online por streaming.
+        </p>
+        <p>
+          Temos também o Livestreaming que é usado para fazer transmissões ao vivo, popularmente conhecido como
+          “Live”, por meio desta
+          tecnologia, você consegue captar e compartilhar o agora, no exato momento que tudo acontece. Algo que é
+          extremamente útil para
+          realizar eventos de forma online e ter uma interação ao vivo com os espectadores
+        </p>
+        <p>
+          Atualmente, existe uma grande variedade de plataformas gratuitas e profissionais que oferecem serviços
+          de Livestreaming. De redes
+          sociais como Facebook, Instagram, Twitch e YouTube
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="img/servicos.jpg" data-toggle="modal" data-target="#modal6" class="img-fluid imgcustom img-zoom">
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/guerra.jpg" data-toggle="modal" data-target="#modal7" class="img-fluid imgcustom img-zoom">
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="img/live.jpg" data-toggle="modal" data-target="#modal8" class="img-fluid imgcustom img-zoom">
+        </div>
+      </div>
+      <hr>
+  </section>
+
+  <section id="diferencas">
+    <div class="container cont-custom">
+      <div>
+        <h3 class="text-center">Diferenças entre Streaming e LiveStreaming</h3>
+        <p>
+          A diferença é que o livestream é um serviço de transmissão de conteúdo ao vivo, pois são realizada em tempo
+          real. É esse formato
+          que pessoas interagem com ouvintes e convidados, fazem programas, shows e transmissões ao vivo para ficar mais
+          envolvente e
+          dinâmico.
+        </p>
+        <p>
+          O livestream permite que os usuários assistam programas e eventos que estão sendo transmitidos ao vivo,
+          contrário do streaming. Os
+          dados não são carregados parcialmente, e se tiver caso de desconexão com a internet, ela é interrompida até
+          que o problema seja
+          resolvido, para então ser carregado e reproduzido novamente. Além disso, ao voltar não é possível retornar o
+          trecho que estava
+          assistindo, a não ser que o livestream seja gravado para o formato streaming.
+        </p>
+        <p>
+          O streaming em si precisa do pré-carregamento de dados para ser consumido, geralmente são gravados e
+          disponibilizados ao
+          público para que seja assistido, Livestream é tudo AO VIVO, está acontecendo ali e agora com mil
+          possibilidades de interação.
+        </p>
+
+      </div>
+      <div>
+        <img src="img/fazelive.png" class="img-fluid imgcustom">
+      </div>
+      <hr>
+    </div>
+  </section>
+
+  <section id=footer>
+    <hr class=l1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center">
+          <h2>Site Desenvolvido por:</h2>
+          <p class="p">Matheus Valladao Silva</p>
+          <p class="p">Thayna Soares Cavalcanti</p>
+          <p class="p">Vitor Oliveira Novais</p>
+        </div>
+        <div class="col-md-6">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <img src="img/Centro-Paula-Souza-Logo.png" class="img-fluid ">
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="img/Logo.png" class="img-fluid ">
+              </div>
+              <div class="col-md-4 text-center">
+                <img src="img/sp.png" class="img-fluid ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="l1">
+        <div class="text-center">
+          <small class="small">Etec Paulistano, 2021</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--------------Modals----------------->
+
+  <!----ModalOrigem--->
+
+  <!------Modal1------->
+  <div class="modal fade" id=modal1 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/tv.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal1------->
+  <div class="modal fade" id=modal2 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Muzak.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal1------->
+  <div class="modal fade" id=modal3 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/radio.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal4------->
+  <div class="modal fade" id=modal4 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/Carregando.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal5------->
+  <div class="modal fade" id=modal5 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/aovivo.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal6------->
+  <div class="modal fade" id=modal6 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/servicos.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal7------->
+  <div class="modal fade" id=modal7 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/guerra.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------Modal8------->
+  <div class="modal fade" id=modal8 role="dialog">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <hr>
+          <button type="button" class="btn btn-danger close text-center" data-dismiss="modal" aria-label="Close">
+            X
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="img/live.jpg" class="img-fluid">
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Scripts-->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/suavizar.js"></script>
+
+</body>
+
+</html>
